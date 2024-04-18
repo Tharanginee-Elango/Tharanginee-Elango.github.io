@@ -8,7 +8,7 @@ app = Flask(__name__, static_url_path='/static', static_folder='static')
 
 @app.route('/')
 def index():
-    return render_template('ckd_form.html')
+    return render_template('index.html')
 
 @app.route('/submit', methods=['POST'])
 def submit():
